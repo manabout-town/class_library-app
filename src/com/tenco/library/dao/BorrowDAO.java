@@ -213,28 +213,7 @@ public class BorrowDAO {
         conn.setAutoCommit(true); // autocommit 복구
         conn.close();
       }
-
-
     }
-
-
-  }
-
-
-  public static void main(String[] args) {
-    BorrowDAO borrowDAO = new BorrowDAO();
-    try {
-      // borrowDAO.borrowBook(1, 1);
-//      java.util.List<Borrow> borrowList = borrowDAO.getBorrowedBooks();
-//      System.out.println(borrowList);
-      borrowDAO.returnBook(1, 1);
-
-
-    } catch (SQLException e) {
-      System.out.println("------------------------------------");
-      System.out.println("대출 처리 중 오류 발생 : " + e.getMessage());
-    }
-
   }
 }
 
